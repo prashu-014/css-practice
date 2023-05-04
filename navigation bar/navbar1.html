@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="navbar1.css">
+</head>
+<body>
+    <header class="header">
+        <div>Logo</div>
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li><a class="navbar-link" href="#">Home</a></li>
+                <li><a class="navbar-link" href="#">About</a></li>
+                <li><a class="navbar-link" href="#">Services</a></li>
+                <li><a class="navbar-link" href="#">Gallary</a></li>
+                <li><a class="navbar-link" href="#">Contact us</a></li>
+            </ul>
+
+        </nav>
+
+        <div class="mobile-navabar-btn">
+            <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+            <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+
+        </div>
+
+    </header>
+
+    <main>
+        <section class="section-hero">
+            <div class="hero">
+                <p>Hero section</p>
+            </div>
+        </section>
+
+
+        <section class="section-services">
+            <div class="hero">
+                <p>service section</p>
+            </div>
+        </section>
+    </main>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script>
+    const mobile_nav=document.querySelector(".mobile-navabar-btn");
+    const nav_header=document.querySelector(".header");
+
+    const toggleNavbar = () =>
+    {
+        // alert("plz scc");
+
+        nav_header.classList.toggle('active');
+    }
+
+    mobile_nav.addEventListener("click",() => toggleNavbar());
+</script>
+
+</body>
+</html>
